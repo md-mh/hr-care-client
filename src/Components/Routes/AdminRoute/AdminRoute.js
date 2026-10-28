@@ -2,9 +2,7 @@ import React from "react";
 import { Navigate, useLocation } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import Loaders from "../../Share/Loader";
-import { createRequire } from 'module';
 
-const require = createRequire(import.meta.url);
 
 const AdminRoute = ({ children, ...rest }) => {
   const { user, isAdmin, isLoading } = useAuth();
